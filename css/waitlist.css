@@ -1,0 +1,27 @@
+#waitlist-widget {
+	font-family: sans-serif;
+}
+.column {
+	width:  250px;
+	margin-right:  20px;
+	float:  left;
+}
+.column .group {
+	margin-bottom:  10px;
+}
+label {
+	display: block;
+	font-size: 10pt;
+	margin-bottom: 4px;
+}
+input, textarea {
+	width:  100%;
+	background-color: #fff;
+	border:  1px solid #999;
+	border-radius: 4px;
+	line-height: 16pt;
+	padding: 4px;
+}
+input[type=submit] {
+	width:  auto;
+}
