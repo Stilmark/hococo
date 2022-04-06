@@ -2,11 +2,13 @@ let waitinglist = {
 	columns: [{ // Column 1
 		first_name: {
 			label: {},
-			input: {type: 'text'}
+			input: {type: 'text', maxlength: 4},
+			required: true
 		},
 		last_name: {
 			label: {},
-			input: {type: 'text'}
+			input: {type: 'text'},
+			required: true
 		},
 	},
 	{ // Column 2
@@ -21,6 +23,6 @@ let waitinglist = {
 }
 
 let testData = {
-	firstName: 'John',
-	lastName: 'Doe'
+	first_name: 'John',
+	last_name: 'Doe'
 }

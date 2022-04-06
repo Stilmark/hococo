@@ -7,8 +7,10 @@ document.getElementsByTagName('head')[0].append(jquery, form, config, vocabulary
 function buildWidget()
 {
 	if ($('#waitlist-widget').length) {
+
 		let widget = $('#waitlist-widget');
 		let form = $('<form>', {id: 'waitinglist-form', action: 'post'});
+		var language = widget.attr('lang') ?? 'da';
 
 		$.each(waitinglist.columns, function(c, column) {
 
@@ -19,7 +21,10 @@ function buildWidget()
 				if (group.label) {
 					group.label.for = id;
 					if (!group.label.text) {
-						group.label.text = translate('da', id);
+						group.label.text = translate(language, id);
+					}
+					if (group.required) {
+						group.label.class += ' mandatory';
 					}
 				}
 				if (group.input) {

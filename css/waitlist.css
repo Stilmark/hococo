@@ -14,6 +14,12 @@ label {
 	font-size: 10pt;
 	margin-bottom: 4px;
 }
+label.mandatory:after {
+	content:  '*';
+	color:  #d00;
+	font-size:  16pt;
+	line-height: 12pt;
+}
 input, textarea {
 	width:  100%;
 	background-color: #fff;
